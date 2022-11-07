@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>JavaScript サンプル</title>
+<meta charset="utf-8">
+<title>Introduction to JavaScript</title>
 </head>
 <body>
-
-<h1 align="center">a進数から10進数に引っ越そう!!</h1>
-
+<p id="result1"></p>
+<p id="result2"></p>
 <script>
-document.write(Math.random().toString(16).slice(-6));
+  var price1 = Math.floor( Math.random() * 16 );
+  var price2 = Math.floor( Math.random() * 16 );
+  var total = price1 + price2;
+  var product = price1*price2
+  document.getElementById("result1").innerHTML = price1.toString(16)+"+"+price2.toString(16) +"=" + total.toString(16)+ "です。";
+  document.getElementById("result2").innerHTML = price1.toString(16)+"×"+price2.toString(16) +"=" + product.toString(16)+ "です。";
 </script>
-<form action="xxx.html" method="get" name="mail_form">
-            実験中：<input type="text" name="mail">
-            <input type="submit" value="送信">
-        </form>
 </body>
 </html>
